@@ -10,21 +10,28 @@ into your Python code and the command line is yours.
 ```python3
 from cookie.cookie import Cookie
 
-app = Cookie(__name__, notes=('my awesome app'))
+app = Cookie(__name__)
 """
 all your code
 """
 
 @app.get_args
-def main (thing1='', thing2=0):
+def main (thing='', other=0):
   """
   do things with the things
   using all your code
   """
 
 app.run(main)
-```test.py
+```
 Meanwhile on the command line...
 ```
-$ 
+$ myapp --help
+Usage:  python3 myapp 
+[-t | --thing THING] something that is used for a thing
+[-o | --other OTHER] other thing for something
+
+	respectively
+..
+
 ```
