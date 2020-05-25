@@ -1,0 +1,15 @@
+
+## author globals
+author: 'chairsdaily'
+email: 'chairs.daily.2019@gmail.com'
+
+## project information
+project:
+  name: 'cookie'
+  description: 'easy cli integration'
+  license: 'MIT'
+  language: 'python3'
+  directory: $project_name
+  standalone: True 
+  requires: ''
+  testing: 'unittest'

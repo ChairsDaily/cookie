@@ -1,0 +1,14 @@
+# byte-code files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# packaging
+.Python
+build/
+sdist/
+wheels/
+
+# IDE settings
+.spyderproject
+.spyproject
