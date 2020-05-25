@@ -10,6 +10,6 @@ project:
   license: 'MIT'
   language: 'python3'
   directory: $project_name
-  standalone: True 
-  requires: ''
+  standalone: False 
+  requires: 'requests'
   testing: 'unittest'
