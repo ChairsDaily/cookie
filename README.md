@@ -17,9 +17,14 @@ all your code
 
 @app.get_args
 def main (thing1='', thing2=0):
-  # do things with the things
-  # using all your code
-  pass
+  """
+  do things with the things
+  using all your code
+  """
 
 app.run(main)
+```test.py
+Meanwhile on the command line...
+```
+$ 
 ```
