@@ -2,8 +2,8 @@
 Gone are the days of `optparse` or fiddling with `sys.argv`. This is 
 command line argument parsing that just makes sense.
 
-*Drop `/cookie/cookie/` into `/usr/lib/python3/dist-packages` or if youre on Android 
-open termux and do `$ cp -r cookie/cookie/ <your_source_tree>/*
+Drop `/cookie/cookie/` into `/usr/lib/python3/dist-packages` or if youre on Android 
+open termux and do `$ cp -r cookie/cookie/ <your_source_tree>/`
 
 **installation** `$ python3 install.py` adds the given location of `cookie/` to your system path <br>
 **testing** - `$ python3 -m unittest discover` uses standard library test suite
