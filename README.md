@@ -26,12 +26,15 @@ app.run(main)
 ```
 Meanwhile on the command line...
 ```
-$ myapp --help
-Usage:  python3 myapp 
-[-t | --thing THING] something that is used for a thing
-[-o | --other OTHER] other thing for something
+$ python3 app.py --help
+Usage:  python3 app.py 
 
-	respectively
-..
-
+	something that is used for a thing
+	[-t | --thing THING] 
+	
+	other thing for something
+	[-o | --other OTHER] 
+$ python3 -m cookie.executable app.py
+$ app
+...
 ```
