@@ -2,7 +2,7 @@
 Gone are the days of `optparse` or fiddling with `sys.argv`. This is 
 command line argument parsing that just makes sense.
 
-**installation** `$ python3 install.py` adds the given location of `cookie/` to your system path
+**installation** `$ python3 install.py` adds the given location of `cookie/` to your system path <br>
 **testing** - `$ python3 -m unittest discover` uses standard library test suite
 
 Cookie is design to be super simple and extremely scalable. Just add a gateway
