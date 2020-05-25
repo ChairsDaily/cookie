@@ -27,14 +27,15 @@ app.run(main)
 Meanwhile on the command line...
 ```
 $ python3 app.py --help
-Usage:  python3 app.py 
+
+Usage:  python3 app.py (executable, False)
 
 	something that is used for a thing
 	[-t | --thing THING] 
 	
 	other thing for something
 	[-o | --other OTHER] 
-$ python3 -m cookie.executable app.py
-$ app
+
+$ python3 -m cookie.exec app.py
 ...
 ```
