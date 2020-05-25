@@ -6,6 +6,7 @@ Beautiful command line parsing
 import inspect, sys
 from collections import namedtuple
 from collections import defaultdict
+from subprocess import DEVNULL
 
 class Cookie (object):
 	"""
@@ -109,6 +110,7 @@ class Cookie (object):
 
 		return args_full, args_abbrev
 
+
 	def __resolve (self, args, signature):
 		"""
 		Resolve arguments final destinations
@@ -158,7 +160,7 @@ class Cookie (object):
 		return '{} {}'.format(ordered_str, optional_str)
 
 
-	def generate (self, function):
+	def get_args (self, function):
 		"""
 		The main decorator, the glue
 		"""
@@ -167,7 +169,9 @@ class Cookie (object):
 			try:
 				ordered, optional = self.__resolve(sys.argv, sig)
 			except Exception:
-				print('Usage: ', sys.argv[0], self.__usage_outline(sig,))
+
+				self.outline = ('Usage: ', sys.argv[0], self.__usage_outline(sig,)) 
+				print(*self.outline)
 				if not self.notes == (): 
 					print('\n'.join(self.notes) + '\n'+'\t'*1 + 'respectively')
 				return 
@@ -176,6 +180,10 @@ class Cookie (object):
 
 		return wrapper 
 
-	def run (self, function_name):
+	def run (self, function_name, silent=False):
+		restore = sys.stdout
+		if silent:
+			sys.stdout = open('/dev/null', 'w').close()
 		function_name()
+		sys.stdout = restore
 
