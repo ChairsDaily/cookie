@@ -37,5 +37,5 @@ Usage:  python3 app.py (executable, False)
 	[-o | --other OTHER] 
 
 $ python3 -m cookie.exec app.py
-...
 ```
+The next time around we can just do `app --help` :)
