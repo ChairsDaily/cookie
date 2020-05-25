@@ -1,12 +1,12 @@
 # byte-code files
-__pycache__/
-*.py[cod]
-*$py.class
+# __pycache__/
+# *.py[cod]
+# *$py.class
 
 # packaging
 .Python
-build/
 sdist/
+build/
 wheels/
 
 # IDE settings
